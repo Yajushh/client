@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import carbonImage from "../images/carbonNew.png";
-import wildlifeImage from "../images/wildlife.jpg";
+import wildlifeImage from "../images/bear.png";
 import communitiesImage from "../images/revenue.png";
 
 const tabs = {

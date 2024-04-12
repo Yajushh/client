@@ -25,7 +25,7 @@ export default function Home() {
       <Projects />
       <TrackInvestments />
       <About />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <FeaturedResources />
       <FAQComponent />
       <GreenFooter />

@@ -29,8 +29,8 @@ export default function About() {
                 Join us in our journey towards a sustainable future. Together,
                 we can make a difference.
               </p>
-              <div className="flex justify-center items-center max-w-60">
-                <button className="bg-[#1a5130] text-white rounded-full py-4 px-3 text-2xl font-bold w-full ">
+              <div className="w-64">
+                <button className="bg-[#1a5130] text-white rounded-full py-4 px-3 text-2xl font-bold w-full transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130]">
                   About Us
                 </button>
               </div>

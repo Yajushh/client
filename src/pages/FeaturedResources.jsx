@@ -92,7 +92,7 @@ export default function FeaturedResources() {
             </div>
           </div>
           <div className="w-64">
-            <button className="bg-[#1a5130] text-white rounded-full py-4 px-3 text-2xl font-bold w-full">
+            <button className="bg-[#1a5130] text-white rounded-full py-4 px-3 text-2xl font-bold w-full transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130]">
               More Resources
             </button>
           </div>

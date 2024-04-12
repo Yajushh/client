@@ -12,39 +12,41 @@ export default function Navbar() {
       </Link>
       <div className="flex justify-center items-center ml-28">
         <ul className="flex gap-10">
-          <li className="transition duration-300 transform hover:scale-105">
+          <li className="transition duration-300 transform hover:scale-105 hover:underline">
             <Link to="/" className="font-semibold text-2xl">
               Home
             </Link>
           </li>
-          <li className="transition duration-300 transform hover:scale-105">
-            <Link to="/carbon-calculator" className="font-semibold text-2xl">
+          <li className="transition duration-300 transform hover:scale-105 hover:underline">
+            <Link to="/" className="font-semibold text-2xl">
               Carbon Calculator
             </Link>
           </li>
-          <li className="transition duration-300 transform hover:scale-105">
-            <Link to="/carbon" className="font-semibold text-2xl">
+          <li className="transition duration-300 transform hover:scale-105 hover:underline">
+            <Link to="/" className="font-semibold text-2xl">
               Projects
             </Link>
           </li>
-          <li className="transition duration-300 transform hover:scale-105">
-            <Link to="/about" className="font-semibold text-2xl ">
+          <li className="transition duration-300 transform hover:scale-105 hover:underline">
+            <Link to="/" className="font-semibold text-2xl ">
               About
             </Link>
           </li>
-          <li className="transition duration-300 transform hover:scale-105">
-            <Link to="/team" className="font-semibold text-2xl">
+          <li className="transition duration-300 transform hover:scale-105 hover:underline">
+            <Link to="/" className="font-semibold text-2xl">
               Team
             </Link>
           </li>
-          <li className="transition duration-300 transform hover:scale-105">
-            <Link to="/resources" className="font-semibold text-2xl">
+          <li className="transition duration-300 transform hover:scale-105 hover:underline">
+            <Link to="/" className="font-semibold text-2xl">
               Resources
             </Link>
           </li>
         </ul>
-        <button className="bg-white flex gap-2 justify-center items-center font-semibold text-xl rounded-3xl py-2 px-4 ml-14 w-40 hover:bg-slate-200 shadow-md hover:shadow-lg transition duration-300">
-          <Link to="/signup">Connect</Link>
+        <button className="bg-white flex gap-2 justify-center items-center font-semibold text-xl rounded-3xl h-12  py-2 px-4 ml-14 w-48 hover:bg-[#1a5130] hover:text-white shadow-md hover:shadow-lg transition duration-300">
+          <Link to="/signup" className="text-2xl font-semibold">
+            Connect
+          </Link>
           <EastIcon />
         </button>
       </div>

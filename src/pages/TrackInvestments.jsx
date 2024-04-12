@@ -14,7 +14,7 @@ export default function TrackInvestments() {
           <img
             src={trackImage}
             alt="Track Investments Image"
-            className="object-cover h-full w-full rounded-xl transition-transform duration-300 ease-in-out hover:scale-110"
+            className="object-cover h-full w-full rounded-xl transition-transform  overflow-hidden duration-300 ease-in-out hover:scale-110 "
           />
         </div>
 
