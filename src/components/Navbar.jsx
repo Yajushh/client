@@ -5,7 +5,7 @@ import EastIcon from "@mui/icons-material/East";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-0 z-50 flex w-full h-36 bg-zinc-600 bg-opacity-75  items-center px-5">
+    <div className="sticky top-0 z-50 flex w-full h-36 backdrop-blur bg-stone-200 bg-opacity-75  items-center px-5">
       <Link to="/" className="flex items-center gap-2 ml-5">
         <img src={logo} alt="DeCarbonn logo" className="w-20 h-20" />
         <span className="text-6xl font-extrabold ">DeCarbonn</span>

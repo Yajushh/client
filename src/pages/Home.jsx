@@ -11,6 +11,7 @@ import FeaturedResources from "./FeaturedResources";
 import carbonFooter from "./carbonFooter";
 import CarouselComponent from "./CarouselComponent";
 import FAQComponent from "./FAQComponent";
+import GreenFooter from "../components/GreenFooter";
 
 // Removed destructuring from Banner import as it may cause issues if Banner is exported as default
 
@@ -27,6 +28,7 @@ export default function Home() {
       <WhyChooseUs />
       <FeaturedResources />
       <FAQComponent />
+      <GreenFooter />
     </>
   );
 }

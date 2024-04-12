@@ -6,10 +6,10 @@ export default function CarbonCalculator() {
     <div className="flex flex-col items-center bg-[#fdfaec] p-12">
       {/* HEADING */}
       <div className="flex flex-col text-center gap-6 mb-16">
-        <div className="text-[#1a5130] text-7xl font-bold ">
-          Decarbonn your Business
+        <div className="text-[#1a5130] text-7xl font-bold">
+          Decarbonize your Business
         </div>
-        <div className="text-[#1a5130] text-7xl font-bold ">
+        <div className="text-[#1a5130] text-7xl font-bold">
           Invest in Carbon Offset projects
         </div>
       </div>
@@ -22,12 +22,10 @@ export default function CarbonCalculator() {
           <img
             src={CarbonCalc}
             alt="Carbon Calculator"
-            className="object-cover h-full rounded-l-xl"
+            className="object-cover h-full rounded-l-xl transition-transform duration-300 hover:scale-105"
           />
         </div>
-
         {/* RIGHT CONTAINER */}
-        {/* The calc() function calculates the remaining width */}
         <div className="h-full " style={{ width: `calc(100% - 860px)` }}>
           <div className="flex flex-col justify-center h-full p-10">
             <h2 className="text-[#1a5130] text-6xl font-bold mb-5">
@@ -38,8 +36,8 @@ export default function CarbonCalculator() {
               business emits.
             </p>
             <div className="w-full">
-              <div className="w-64 ">
-                <button className="bg-[#1a5130] text-white rounded-full py-4 px-3 text-2xl font-bold w-full">
+              <div className="w-64">
+                <button className="bg-[#1a5130] text-white rounded-full py-4 px-3 text-2xl font-bold w-full transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130]">
                   Carbon Calculator
                 </button>
               </div>

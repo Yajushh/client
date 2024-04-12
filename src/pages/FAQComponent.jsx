@@ -19,20 +19,21 @@ const faqData = [
 ];
 
 const FAQItem = ({ faq, toggle, isOpen }) => (
-  <div style={{ marginBottom: "10px" }}>
+  <div className="mb-2">
     <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        cursor: "pointer",
-      }}
+      className={`flex justify-between items-center text-lg font-semibold text-gray-800 cursor-pointer ${
+        isOpen ? "rounded-t-lg" : "rounded-lg"
+      } bg-[#edfad9] px-5 py-3`}
       onClick={toggle}
     >
-      <p>{faq.question}</p>
+      <p className="text-3xl">{faq.question}</p>
       <span>{isOpen ? "▲" : "▼"}</span>
     </div>
-    {isOpen && <p style={{ marginTop: "5px" }}>{faq.answer}</p>}
+    {isOpen && (
+      <div className="px-5 py-3 bg-[#edfad9] rounded-b-lg text-gray-700 text-xl font-semibold">
+        {faq.answer}
+      </div>
+    )}
   </div>
 );
 
@@ -45,17 +46,22 @@ export default function FAQComponent() {
 
   return (
     <div
-      style={{ background: "#fdfaec", padding: "20px", borderRadius: "5px" }}
+      className="bg-[#fdfaec] w-full h-full flex justify-center items-center"
+      style={{ height: "560px" }}
     >
-      <h2>Frequently Asked Questions</h2>
-      {faqData.map((faq, index) => (
-        <FAQItem
-          key={index}
-          faq={faq}
-          isOpen={openIndex === index}
-          toggle={() => handleToggle(index)}
-        />
-      ))}
+      <div className="bg-[#edfad9] p-6 rounded-lg shadow-md w-2/3 mx-auto my-10">
+        <h2 className="text-4xl text-center font-bold mb-6 text-black">
+          Frequently Asked Questions
+        </h2>
+        {faqData.map((faq, index) => (
+          <FAQItem
+            key={index}
+            faq={faq}
+            isOpen={openIndex === index}
+            toggle={() => handleToggle(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 }

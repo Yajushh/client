@@ -8,13 +8,13 @@ export default function FeaturedResources() {
   return (
     <div className="flex flex-col items-center bg-[#edfad9] p-5">
       <div className="w-full flex justify-center" style={{ height: "1200px" }}>
-        <div className="flex flex-col w-full h-full justify-center items-center">
+        <div className="flex flex-col h-full justify-center items-center p-10">
           {/* Heading */}
           <div className="text-[#1a5130] text-7xl font-bold w-full flex justify-center mb-20">
             Featured Resources
           </div>
           {/* CARDS */}
-          <div className="p-10 flex flex-row gap-10 mx-10">
+          <div className=" flex flex-row gap-10 mx-10 p-10">
             {/* Card 1 */}
             <div
               className="relative"
@@ -23,11 +23,15 @@ export default function FeaturedResources() {
               <img
                 src={card1}
                 alt="Carbon Credits with Wind Turbines"
-                className="w-full h-full rounded-t-3xl object-cover"
+                className="w-full h-full rounded-3xl object-cover"
               />
-              <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-75 text-white rounded-b-3xl h-2/6">
-                <div>What are Carbon Credits and how do they work?</div>
-                <div>Coming Soon...</div>
+              <div className="absolute backdrop-blur bottom-0 w-full p-3 bg-stone-400 bg-opacity-75 text-white rounded-b-3xl h-2/6 flex flex-col items-center  font-semibold">
+                <div className="text-3xl mb-16">
+                  What are Carbon Credits and how do they work?
+                </div>
+                <div className="text-2xl font-semibold mb-0">
+                  Coming Soon...
+                </div>
               </div>
             </div>
             {/* Card 2 */}
@@ -38,14 +42,16 @@ export default function FeaturedResources() {
               <img
                 src={card2}
                 alt="Carbon Emission Reduction for Businesses"
-                className="w-full h-full rounded-t-3xl object-cover"
+                className="w-full h-full rounded-3xl object-cover"
               />
-              <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-75 text-white rounded-b-3xl h-2/6">
-                <div>
+              <div className="absolute backdrop-blur bottom-0 w-full p-3 bg-stone-400 bg-opacity-75 text-white rounded-b-3xl h-2/6 flex flex-col items-center font-semibold">
+                <div className="text-3xl mb-10">
                   How Businesses and Organizations Can Reduce Their Carbon
                   Emissions
                 </div>
-                <div>Coming Soon...</div>
+                <div className="text-2xl font-semibold mb-0">
+                  Coming Soon...
+                </div>
               </div>
             </div>
             {/* Card 3 */}
@@ -56,11 +62,15 @@ export default function FeaturedResources() {
               <img
                 src={card3}
                 alt="Carbon Credits and Wildfire"
-                className="w-full h-full rounded-t-3xl object-cover"
+                className="w-full h-full rounded-3xl object-cover"
               />
-              <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-75 text-white rounded-b-3xl h-2/6">
-                <div>What are Carbon Credits and how do they work?</div>
-                <div>Coming Soon...</div>
+              <div className="absolute backdrop-blur bottom-0 w-full p-3 bg-stone-400 bg-opacity-75 text-white rounded-b-3xl h-2/6 flex flex-col items-center gap-20 font-semibold">
+                <div className="text-3xl ">
+                  What are Carbon Credits and how do they work?
+                </div>
+                <div className="text-2xl font-semibold mb-0">
+                  Coming Soon...
+                </div>
               </div>
             </div>
             {/* Card 4 */}
@@ -71,11 +81,13 @@ export default function FeaturedResources() {
               <img
                 src={card4}
                 alt="Carbon Credit Technologies with People Planting"
-                className="w-full h-full rounded-t-3xl object-cover"
+                className="w-full h-full rounded-3xl object-cover"
               />
-              <div className="absolute bottom-0 w-full p-3 bg-black bg-opacity-75 text-white rounded-b-3xl h-2/6">
-                <div>What are the different carbon credit technologies?</div>
-                <div>Coming Soon...</div>
+              <div className="absolute backdrop-blur bottom-0 w-full p-3 bg-stone-400 bg-opacity-75 text-white rounded-b-3xl h-2/6 flex flex-col items-center  font-semibold">
+                <div className="text-3xl mb-14">
+                  What are the different carbon credit technologies?
+                </div>
+                <div className="text-2xl font-semibold ">Coming Soon...</div>
               </div>
             </div>
           </div>
