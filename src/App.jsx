@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
 import Team from "./pages/Team";
-import CarbonCalc from "./pages/CarbonCalc";
+
 import About from "./pages/About";
 import Resources from "./pages/Resources";
 function App() {
@@ -20,8 +20,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/carbon-calculator" element={<CarbonCalc />} />
           <Route path="/about" element={<About />} />
           <Route path="/resources" element={<Resources />} />
         </Routes>

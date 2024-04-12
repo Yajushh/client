@@ -1,21 +1,32 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { Banner } from "../components/Banner";
+import Banner from "../components/Banner";
+import Carbon from "../pages/Carbon";
+import CarbonCalculator from "./CarbonCalculator";
+import Projects from "./Projects";
+import TrackInvestments from "./TrackInvestments";
+import About from "./About";
+import WhyChooseUs from "./WhyChooseUs";
+import FeaturedResources from "./FeaturedResources";
+import carbonFooter from "./carbonFooter";
+import CarouselComponent from "./CarouselComponent";
+import FAQComponent from "./FAQComponent";
+
+// Removed destructuring from Banner import as it may cause issues if Banner is exported as default
 
 export default function Home() {
   return (
-    <div>
-      <div className="">
-        <Navbar />
-      </div>
-      <div className="">
-        <Banner />
-      </div>
-
-      <div className="">
-        <Footer />
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <Banner />
+      <CarouselComponent />
+      <CarbonCalculator />
+      <Projects />
+      <TrackInvestments />
+      <About />
+      <WhyChooseUs />
+      <FeaturedResources />
+      <FAQComponent />
+    </>
   );
 }
