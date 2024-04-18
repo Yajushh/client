@@ -6,7 +6,7 @@ export default function TrackInvestments() {
     <div className="flex flex-col items-center bg-[#fdfaec] p-12">
       {/* HEADING */}
       <div
-        className="border border-black rounded-xl w-full flex mx-7"
+        className="border border-black rounded-xl w-full flex mx-7 group"
         style={{ height: "780px" }}
       >
         {/* LEFT CONTAINER */}
@@ -17,7 +17,7 @@ export default function TrackInvestments() {
           <img
             src={trackImage}
             alt="Track Investments Image"
-            className="object-cover h-full w-full rounded-xl transition-all duration-500 hover:scale-110  "
+            className="object-cover h-full w-full rounded-xl transition-all duration-700 group-hover:scale-110 "
           />
         </div>
 
@@ -32,7 +32,7 @@ export default function TrackInvestments() {
               investment impact every month.
             </p>
             <div className="w-64">
-              <button className="bg-[#1a5130] text-white rounded-full py-4 px-3 text-2xl font-bold w-full transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130]">
+              <button className="bg-[#1a5130] text-white rounded-full py-4 px-3 text-2xl font-bold w-full transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] ">
                 Track Here
               </button>
             </div>

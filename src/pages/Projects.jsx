@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="flex flex-col items-center bg-[#fdfaec] p-12">
       <div
-        className="border border-black rounded-xl w-full flex mx-7"
+        className="border border-black rounded-xl w-full flex mx-7 group"
         style={{ height: "780px" }}
       >
         {/* LEFT CONTAINER */}
@@ -34,7 +34,7 @@ export default function Projects() {
           <img
             src={projects}
             alt="Carbon Calculator"
-            className="object-cover h-full rounded-l-xl transition-all duration-500 hover:scale-110"
+            className="object-cover h-full rounded-l-xl transition-all duration-700 group-hover:scale-110"
           />
         </div>
       </div>
