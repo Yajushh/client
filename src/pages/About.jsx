@@ -14,7 +14,8 @@ export default function About() {
         </div>
         <div className="flex flex-row">
           {/* LEFT CONTAINER */}
-          <div className="h-full" style={{ width: `calc(100% - 860px)` }}>
+          {/* style={{ width: `calc(100% - 860px)` }} */}
+          <div className="h-full">
             <div className="flex flex-col justify-center h-full p-10">
               <h2 className=" text-4xl  mb-5 font-semibold">
                 At Decarbonn, we envision a world where every business,

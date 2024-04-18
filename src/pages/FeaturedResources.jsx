@@ -19,10 +19,7 @@ export default function FeaturedResources() {
           {/* CARDS */}
           <div className=" flex flex-row gap-16 mb-16  p-10">
             {/* Card 1 */}
-            <div
-              className="relative"
-              style={{ height: "650px", width: "350px" }}
-            >
+            <div className="relative" style={{ height: "650px" }}>
               <img
                 src={card1}
                 alt="Carbon Credits with Wind Turbines"

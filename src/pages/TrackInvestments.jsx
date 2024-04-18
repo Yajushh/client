@@ -10,10 +10,7 @@ export default function TrackInvestments() {
         style={{ height: "780px" }}
       >
         {/* LEFT CONTAINER */}
-        <div
-          className="h-full w-full overflow-hidden"
-          style={{ width: "860px" }}
-        >
+        <div className="h-full w-full overflow-hidden">
           <img
             src={trackImage}
             alt="Track Investments Image"

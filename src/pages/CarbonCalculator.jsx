@@ -18,10 +18,7 @@ export default function CarbonCalculator() {
         style={{ height: "780px" }}
       >
         {/* LEFT CONTAINER */}
-        <div
-          className="h-full overflow-hidden rounded-md"
-          style={{ width: "900px" }}
-        >
+        <div className="h-full overflow-hidden rounded-md">
           <img
             src={CarbonCalc}
             alt="Carbon Calculator"

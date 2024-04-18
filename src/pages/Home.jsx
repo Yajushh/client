@@ -18,7 +18,7 @@ import Test from "../components/Test";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col w-full">
       <Navbar />
       <Banner />
       <CarouselComponent />
@@ -30,7 +30,7 @@ export default function Home() {
       <FeaturedResources />
       <FAQComponent />
       <GreenFooter />
-      <Test />
-    </>
+      {/* <Test /> */}
+    </div>
   );
 }

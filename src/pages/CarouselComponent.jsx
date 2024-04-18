@@ -61,12 +61,10 @@ export default function CarouselComponent() {
           //   style={{ width: "1174px" }} // Adjust the max-width as per the design requirement
         >
           <div
-            className="tab-buttons px-8 py-3 w-full flex justify-between items-center bg-white rounded-full"
+            className="tab-buttons px-8 py-3  flex justify-between items-center bg-white rounded-full w-full h-full"
             style={{
               boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
               overflow: "hidden",
-              width: "1000px",
-              height: "90px",
             }} // Use overflow hidden to maintain rounded corners
           >
             {Object.keys(tabs).map((tab) => (
