@@ -27,11 +27,14 @@ export default function Projects() {
         </div>
 
         {/* RIGHT CONTAINER */}
-        <div className="h-full" style={{ width: "860px" }}>
+        <div
+          className="h-full overflow-hidden rounded-md"
+          style={{ width: "860px" }}
+        >
           <img
             src={projects}
-            alt="Projects Image"
-            className="object-cover h-full rounded-l-xl transition-transform duration-300 hover:scale-105"
+            alt="Carbon Calculator"
+            className="object-cover h-full rounded-l-xl transition-all duration-500 hover:scale-110"
           />
         </div>
       </div>

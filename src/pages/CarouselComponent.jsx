@@ -8,7 +8,6 @@ const tabs = {
   wildlife: wildlifeImage,
   communities: communitiesImage,
 };
-
 const TabButton = ({ name, active, onClick }) => (
   <button
     onClick={onClick}
@@ -17,19 +16,26 @@ const TabButton = ({ name, active, onClick }) => (
       backgroundColor: active ? "#1a5130" : "transparent",
       color: active ? "white" : "#1a5130",
       fontSize: "23px",
-      //   border: "2px solid #2e7d32",
       outline: "none",
-      padding: "15px 30px", // Increase padding for more stretch
-      margin: "0 2px", // Reduce margin to allow for more space for padding
+      padding: "15px 30px",
+      margin: "0 2px",
       cursor: "pointer",
       borderRadius: "50px",
+      transition: "all 0.3s ease",
+      flex: "1 0 auto",
+      maxWidth: "calc(33% - 70px)",
       boxShadow: active
         ? "0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)"
         : "none",
-      transition: "all 0.3s ease",
-      flex: "1 0 auto", // Flex grow, don't shrink, and base width auto
-      maxWidth: "calc(33% - 70px)", // Ensure the buttons do not overflow the container
     }}
+    // Add hover effect
+    onMouseEnter={() =>
+      active
+        ? null
+        : (event.target.style.boxShadow =
+            "0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)")
+    }
+    onMouseLeave={() => (event.target.style.boxShadow = "none")}
   >
     {name}
   </button>

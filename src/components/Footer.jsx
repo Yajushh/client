@@ -1,4 +1,6 @@
 import React from "react";
+import trusted from "../images/trusted.png";
+import airminers from "../images/AIRMINERS.png";
 
 export default function Footer() {
   return (
@@ -9,10 +11,12 @@ export default function Footer() {
       }}
     >
       <div className="flex justify-center py-4 items-center mx-auto gap-3">
-        <div className="font-extrabold text-5xl font-serif">Trusted By :</div>
+        <div className="font-extrabold text-5xl font-serif flex flex-row">
+          <img src={trusted} alt="" />
+          <div>:</div>
+        </div>
         <div className="flex">
-          <span className="font-extrabold text-5xl font-serif">AIR</span>
-          <span className="text-5xl font-serif font-extralight">MINERS</span>
+          <img src={airminers} alt="" />
         </div>
       </div>
     </div>

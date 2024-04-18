@@ -14,26 +14,37 @@ export default function CarbonCalculator() {
         </div>
       </div>
       <div
-        className="border border-black rounded-xl w-full flex mx-7"
+        className="border border-black rounded-xl w-full flex mx-7 group"
         style={{ height: "780px" }}
       >
         {/* LEFT CONTAINER */}
-        <div className="h-full" style={{ width: "860px" }}>
+        <div
+          className="h-full overflow-hidden rounded-md"
+          style={{ width: "900px" }}
+        >
           <img
             src={CarbonCalc}
             alt="Carbon Calculator"
-            className="object-cover h-full rounded-l-xl transition-transform duration-300 hover:scale-105"
+            className="object-cover h-full rounded-l-xl transition-all duration-700 group-hover:scale-110"
           />
         </div>
         {/* RIGHT CONTAINER */}
-        <div className="h-full " style={{ width: `calc(100% - 860px)` }}>
-          <div className="flex flex-col justify-center h-full p-10">
-            <h2 className="text-[#1a5130] text-6xl font-bold mb-5">
-              CALCULATE YOUR CARBON FOOTPRINTS
-            </h2>
-            <p className="text-3xl mb-10">
-              Use our open-source calculator to find out how much CO2 your
-              business emits.
+        <div
+          className="h-full flex justify-center items-center"
+          style={{ width: `calc(100% - 900px)` }}
+        >
+          <div className="flex flex-col justify-center items-center h-full p-10 gap-12">
+            <div>
+              <h2 className="text-[#1a5130] text-6xl font-bold mb-5  w-full">
+                CALCULATE YOUR
+              </h2>
+              <h2 className="text-[#1a5130] text-6xl font-bold mb-5  w-full">
+                CARBON FOOTPRINTS
+              </h2>
+            </div>
+            <p className="text-4xl mb-10 ml-5 text-[#403E3E] flex justify-center items-center">
+              On a mission to finance and remove 1,000,000 tonnes of CO2 from
+              the atmosphere by 2028.
             </p>
             <div className="w-full">
               <div className="w-64">

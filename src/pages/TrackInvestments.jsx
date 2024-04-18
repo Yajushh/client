@@ -10,11 +10,14 @@ export default function TrackInvestments() {
         style={{ height: "780px" }}
       >
         {/* LEFT CONTAINER */}
-        <div className="h-full" style={{ width: "860px" }}>
+        <div
+          className="h-full w-full overflow-hidden"
+          style={{ width: "860px" }}
+        >
           <img
             src={trackImage}
             alt="Track Investments Image"
-            className="object-cover h-full w-full rounded-xl transition-transform  overflow-hidden duration-300 ease-in-out hover:scale-110 "
+            className="object-cover h-full w-full rounded-xl transition-all duration-500 hover:scale-110  "
           />
         </div>
 
